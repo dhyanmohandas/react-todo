@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import TodoItem from './TodoItem';
 import todoData from './todoData';
 
+import './style.css';
+
 class App extends Component{
    constructor(){
       super()
