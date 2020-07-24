@@ -2,9 +2,6 @@ import React from 'react';
 import {Component} from 'react';
 
 class TodoItem extends Component{
-    // handleCheck(){
-    //     console.log("checked");
-    // }
     render(){
         return(
         <div className="todo-item">
