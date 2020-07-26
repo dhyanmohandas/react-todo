@@ -25,3 +25,11 @@ div {
     text-align: center;
   }
   
+.completedTodo{
+      font-style: italic;
+      text-decoration: line-through;
+  }
+
+.incompleteTodo{
+    text-decoration: solid;
+}
