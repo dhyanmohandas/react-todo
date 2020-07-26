@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import TodoItem from './TodoItem';
 import todoData from './todoData';
+import Header from './Header';
 
 import './style.css';
 
@@ -15,7 +16,7 @@ class App extends Component{
    }
 
    handleChange(id){
-      
+
       console.log("Box: " + id)
 
       this.setState(prevState => {
@@ -34,9 +35,7 @@ class App extends Component{
      
       const todoItems = this.state.todos.map(item => <TodoItem key = {item.id} item = {item} handleChange = {this.handleChange} />);
       return(
-         <div>
-           {todoItems}
-         </div>
+         <div className="todo-list"><Header />{todoItems}</div>  
       );
    }
 }
